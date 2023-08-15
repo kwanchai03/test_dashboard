@@ -2,10 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <!-- <meta name="viewport" content="initial-scale=1"> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Power BI Dashboard test 1</title>
@@ -13,18 +11,79 @@
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
-    <!-- <style>html,body{width:100%;height:100%}*,*:before,*:after{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{margin:0;color:#000000d9;font-size:20px;font-family:Heavent,sans-serif;font-variant:tabular-nums;line-height:1.5715;background-color:#fff;font-feature-settings:"tnum","tnum"}html{--antd-wave-shadow-color:#0ab8f8;--scroll-bar:0}@font-face{font-family:Heavent;src:url(/assets/fonts/DB_Heavent_v3.2.1.ttf);font-weight:500;font-style:normal}@font-face{font-family:Heavent;src:url(/assets/fonts/DB_Heavent_Med_v3.2.1.ttf);font-weight:600;font-style:normal}@font-face{font-family:Heavent;src:url(/assets/fonts/DB_Heavent_Med_v3.2.1.ttf);font-weight:700;font-style:normal}@font-face{font-family:Heavent;src:url(/assets/fonts/DB_Heavent_Bd_v3.2.1.ttf);font-weight:750;font-style:normal}html{min-width:700px;min-height:600px}body{width:100%;height:100%;font-weight:500;font-family:Heavent,sans-serif}</style> -->
-    <style>
-        @media only screen and (max-width: 900px) {
-    /* Style adjustments for non responsive websites */
-    body{width:940px;}
-            }
-    </style>
     <body class="sb-nav-fixed">
-        <iframe title="PowerAppsInPowerBI_test1" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=7afbc25b-82f8-420b-b60c-6233ec9f3eff&autoAuth=true&ctid=1be6ee3b-03bf-4a14-8b76-99d20c316925" frameborder="0" allowFullScreen="true"></iframe>        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <!-- <script src="js/scripts.js"></script> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script> -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script> -->
-        <!-- <script src="js/datatables-simple-demo.js"></script> -->
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Power BI Dashboard</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <!-- <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                </div>
+            </form> -->
+            <!-- Navbar-->
+            <!-- <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul> -->
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Dashboard 1</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Power BI Dashboard 1
+                            </a>
+                            <a class="nav-link" href="test2.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Power BI Dashboard 2
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">Power BI Dashboard test 1</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Power BI dashboard open power app open power bi 1</li>
+                        </ol>
+                        <div class="row">
+                            <iframe
+                            style="width: 100%;"
+                              height="600"
+                              src="https://app.powerbi.com/view?r=eyJrIjoiYTc4YjZhZTctMTIzNS00NmZmLWJjMDQtYmY4MjA1ZWZlOWQxIiwidCI6ImI1YjdkNGRmLWQ3NTAtNDAxNi04OGRhLWU0MGM5MWVkYzI3YSIsImMiOjEwfQ%3D%3D"
+                              frameborder="0"
+                              allowfullscreen="true"
+                            ></iframe>
+
+                    </div>
+                </main>
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
     </body>
 </html>
